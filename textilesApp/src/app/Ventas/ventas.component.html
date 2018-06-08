@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+	<title>
+		{{titulo}}
+	</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<meta charset="utf-8">
+	<meta nam  e="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+
+<body>
+
+ <div class="container">
+		<nav class="navbar navbar-default top-navbar" role="navigation">
+  		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    
+            <ul class="nav navbar-nav">
+               <li class="active"><a href="/ventas">Ventas <span class="sr-only">(current)</span></a></li>
+
+               <li class="active"><a href="/factura">Facturas<span class="sr-only">(current)</span></a></li>
+               <li class="active"><a href="/producto">Productos<span class="sr-only">(current)</span></a></li>
+               <li class="active"><a href="/proveedores">Proveedores<span class="sr-only">(current)</span></a></li>
+               <li class="active"><a href="/inventario">Inventarios<span class="sr-only">(current)</span></a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+        </nav>
+  
+        
+        		<h3>
+					{{nombre}}
+				</h3>
+        
+        <br>
+
+<form class="form-horizontal" (ngSubmit)="createImage(createImageForm.value)" #createImageForm ="ngForm">
+    <div class="col-xs-2" id="cont1">
+
+         <div class="form-group">
+                <label for="nombrepatente">{{label1}}</label>
+                 <input type="date" name="fecha" min="2010-01-01" max="2050-01-01" class="form-control" name="fecha" id="fecha" ngModel />
+         </div>         
+            
+          	
+         <div class="form-group">
+            		<label for="nombrepatente">{{label3}}</label>
+                     <fieldset disabled>
+                        <input type="text"  id="disabledTextInput" class="form-control" placeholder="Factura ###" name="Nfactura" ngModel>
+                     </fieldset>
+        </div>
+
+        <div class="form-group">
+                    <label for="nombrepatente">{{label2}}</label>
+            		<input type="fecha" class="form-control" placeholder="Cantidad" name="cantidad" id="cantidad" ngModel>
+         </div>  
+     </div>
+
+    <div class="col-xs-4">
+        <div class="form-group">
+        		<label for="nombrepatente">{{label4}}</label>
+        		 <fieldset disabled>
+        			<input type="text" id="disabledTextInput" class="form-control" placeholder="Usuario X" name="Usuario"  ngModel>
+        		 </fieldset>	
+        </div>   
+    
+        <div class="form-group">       
+            <label for="nombre">{{label5}}</label>
+
+            <select class="form-control" name="cproductos" ngModel>
+
+                <option>...</option>
+                <option *ngFor = "let prod of listado_productos">{{prod}}</option>
+                     
+            </select>
+        </div>
+
+        <div class="form-group"> 
+            <label for="nombre">{{label6}}</label>
+
+            <select class="form-control" name="precios"  ngModel>
+
+                <option>...</option>
+                <option *ngFor = "let prec of listado_prec">{{prec}}</option>
+                     
+            </select><br>
+
+            <button type="submit" class="btn btn-primary"> Registrar </button>
+
+
+         </div>
+
+     </div>
+</form>
+
+
+ </div><br><br><br> 
+      <div class="datagrid">
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>header</th>
+                            <th>header</th>
+                            <th>header</th>
+                            <th>header</th>
+                         </tr>
+                    </thead>
+                    <tfoot>
+                        <tr>
+                            <td colspan="4">
+                            <div id="paging">
+                                <ul>
+                                <li><a href="#"><span>Previous</span></a></li>
+                                <li><a href="#" class="active"><span>1</span></a></li>
+                                <li><a href="#"><span>2</span></a></li><li><a href="#"><span>3</span></a></li>
+                                <li><a href="#"><span>4</span></a></li><li><a href="#"><span>5</span></a></li>
+                                <li><a href="#"><span>Next</span></a></li>
+                                </ul>
+                            </div>
+                            </td>
+                        </tr>
+                    </tfoot>
+                    <tbody>
+
+                        <tr>
+
+                            <td>data</td>
+                            <td>data</td>
+                            <td>data</td>
+                            <td>data</td>
+                        </tr>
+                         <tr>        
+                            <td>data</td>
+                            <td>data</td>
+                            <td>data</td>
+                            <td>data</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>data</td>
+                            <td>data</td>
+                            <td>data</td>
+                            <td>data</td>
+                        </tr>
+
+                        <tr class="alt">
+                            <td>data</td>
+                            <td>data</td>
+                            <td>data</td>
+                            <td>data</td>
+                        </tr>
+                        <tr>
+
+                            <td>data</td>
+                            <td>data</td>
+                            <td>data</td>
+                            <td>data</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+ 
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+	<script type="text/javascript" src="../../js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="../../js/._jquery.js"></script>
+
+</body>
+</html>

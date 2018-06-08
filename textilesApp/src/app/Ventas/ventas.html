@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+	<title>
+		{{titulo}}
+	</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+	
+	<script src="js/bootstrap-datetimepicker.min.js"></script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+	<link rel="stylesheet" href="css/style.css">
+
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+	<script type="text/javascript" src="js/jquery-3.2.1.min.min.js"></script>
+
+	<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+    
+<div></div>
+<body>
+
+
+	<div class="container">
+		<nav class="navbar navbar-inverse">
+  			<center>
+				<h3>
+					{{nombre}}
+				</h3>
+			</center>
+		</nav></br></br></br>
+
+<label for="nombrepatente">{{label1}}</label>
+<div class="row">
+
+        <div class='col-sm-2'>
+            <div class="form-group">
+                <div class='input-group date' id='datetimepicker1'>
+                    <input type='text' class="form-control" />
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            $(function () {
+                $('#datetimepicker1').DateTimePicker();
+            });
+        </script>
+    </div>
+  	<div class="col-xs-2">
+
+    		<label for="nombrepatente">{{label2}}</label>
+    		<input type="fecha" class="form-control" placeholder="Cantidad"></br>
+
+    		<label for="nombrepatente">{{label3}}</label>
+    		 <fieldset disabled>
+    			<input type="text" id="disabledTextInput" class="form-control" placeholder="Factura ###">
+    		 </fieldset>
+
+	</div>  
+
+
+
+		<div class="col-xs-4">
+
+    		<label for="nombrepatente">{{label4}}</label>
+    		 <fieldset disabled>
+    			<input type="text" id="disabledTextInput" class="form-control" placeholder="Usuario X">
+    		 </fieldset>	
+
+
+    		<label for="nombre">{{label5}}</label>
+
+    		<select class="form-control">
+                      <option>...</option>
+                      <option>{{listado_productos}}</option>
+                      <option>Producto2</option>
+                      <option>Producto3</option>
+                      <option>Producto4</option>
+                 </select></br>
+
+                 <button type="button" class="btn btn-info"><h4> {{boton1}} </h4> </button>  
+		</div>
+	
+
+	</div>
+
+	<div class="container">
+	
+	
+	</div>
+
+	</div>
+
+
+		      
+</div></br></br></br>
+
+
+</body>
+</html>

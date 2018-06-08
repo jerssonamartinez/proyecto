@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+	<title>
+		{{titulo}}
+	</title>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/jquery-3.2.1.min.min.js"></script>
+	<meta charset="utf-8">
+	<meta nam  e="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+
+<body>
+
+    <div class="container">
+        <nav class="navbar navbar-default top-navbar" role="navigation">
+  			<div class="navbar-header">
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="/ventas">Ventas <span class="sr-only">(current)</span></a></li>
+                        <li class="active"><a href="/factura">Facturas<span class="sr-only">(current)</span></a></li>
+                        <li class="active"><a href="/producto">Productos<span class="sr-only">(current)</span></a></li>
+                        <li class="active"><a href="/proveedores">Proveedores<span class="sr-only">(current)</span></a></li>
+                        <li class="active"><a href="/inventario">Inventarios<span class="sr-only">(current)</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <br>
+        
+        
+        
+  	<div class="col-xs-2">
+
+    		 
+    </div>  
+
+
+    <div class="col-xs-4">
+
+    		<label for="nombrepatente">Nombre</label>
+    		 <fieldset>
+    			<input type="text" id="disabledTextInput" class="form-control" placeholder="Nombre Proveedor">
+    		 </fieldset>	
+
+        <label for="nombrepatente">Contacto</label>
+    		 <fieldset>
+    			<input type="text" id="disabledTextInput" class="form-control" placeholder="telefono">
+    		 </fieldset>
+        
+        <label for="nombre">Entidad</label>
+
+        <label for="nombrepatente">{{label4}}</label>
+    		 <fieldset>
+    			<input type="text" id="disabledTextInput" class="form-control" placeholder="Razon social">
+    		 </fieldset>
+        <label for="nombrepatente">Correo</label>
+    		<input type="email" class="form-control" placeholder="Email"><br>
+
+    		<label for="nombrepatente">{{label3}}</label>
+        <br>
+        
+        <button type="button" class="btn btn-info"> Registrar </button>
+        <br><br><br><br>
+        <a href="#" class="btn btn-info">Consultar provedores</a>
+        <!-- eliminar dentro de consultar-->
+        
+    </div>
+    
+
+
+	</div>
+
+</body>
+</html>

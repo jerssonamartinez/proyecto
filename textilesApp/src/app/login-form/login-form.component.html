@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+	<title>
+        AdminTex
+	</title>
+    
+    
+<!-- Bootstrp 3.3.7 -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    
+   
+    
+ <!-- Angular js --> 
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+	
+  <!--  <link rel="stylesheet" href="css/style.css">-->
+	<!-- <script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/jquery-3.2.1.min.min.js"></script> -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+ 
+  <base href="/">
+
+
+    
+</head>
+<body>
+	
+    <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+     <!--
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>-->
+      <a class="navbar-brand" href="#">AdminText</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+
+
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+    
+    <img alt="logo" width="500" src="../../assets/img/logo.jpg">
+    <br><br>
+    <form (submit)= "loginUser($event)" class="form-inline">
+  
+    <div class="form-group">
+        <label class="sr-only" for="exampleInputEmail3">Usuario</label>
+        <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Usuario">
+    </div> 
+    <div class="form-group">
+        <label class="sr-only" for="exampleInputPassword3">Contraseña</label>
+        <input type="password" class="form-control" id="exampleInputPassword3" placeholder="Contraseña">
+    </div>
+    <div class="checkbox">
+        <label>
+        <input type="checkbox"> Recordar contraseña
+        </label>
+    </div>
+    <br><br>
+        
+    <div class="form-group">
+        <button type="submit" class="btn btn-info">Iniciar Sesión</button>
+    </div>
+    <div class="form-group">
+        <a href="/register-form" class="btn btn-info">Registrarse</a>
+    </div>
+
+    </form>
+
+</body>
+</html>

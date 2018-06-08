@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+	<title>
+		{{titulo}}
+	</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/jquery-3.2.1.min.min.js"></script>
+	<meta charset="utf-8">
+	<meta nam  e="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+
+<body>
+<div id="wrapper">
+    <div class="container">
+        <nav class="navbar navbar-default top-navbar" role="navigation">
+  			<div class="navbar-header">
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="/ventas">Ventas <span class="sr-only">(current)</span></a></li>
+                        <li class="active"><a href="/factura">Facturas<span class="sr-only">(current)</span></a></li>
+                        <li class="active"><a href="/producto">Productos<span class="sr-only">(current)</span></a></li>
+                        <li class="active"><a href="/proveedores">Proveedores<span class="sr-only">(current)</span></a></li>
+                        <li class="active"><a href="/inventario">Inventarios<span class="sr-only">(current)</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <h3>
+			{{nombre}}
+        </h3>
+        <br><br><br>
+        <label for="nombrepatente">{{label1}}</label>
+        
+        
+  	<div class="col-xs-2">
+
+    </div>  
+
+
+    <div class="col-xs-4">
+
+    		<label for="nombrepatente">Nombre</label>
+    		 <fieldset>
+    			<input type="text" id="disabledTextInput" class="form-control" placeholder="Nombre Producto">
+    		 </fieldset>	
+
+        <label for="nombrepatente">Descripcion</label>
+    		 <fieldset>
+    			<input type="text" id="disabledTextInput" class="form-control" placeholder="Individual o conjunto">
+    		 </fieldset>
+        
+        <label for="nombre">Precio</label>
+
+        <label for="nombrepatente">{{label4}}</label>
+    		 <fieldset>
+    			<input type="text" id="disabledTextInput" class="form-control" placeholder="Pesos">
+    		 </fieldset>
+        <label for="nombrepatente">Cantidad</label>
+    		<input type="fecha" class="form-control" placeholder="Cantidad"><br>
+
+    		<label for="nombrepatente">{{label3}}</label>
+        <br>
+        
+        <button type="button" class="btn btn-info">Registrar </button>  
+    </div>
+        
+    <script src="assets/js/jquery-1.10.2.js"></script>
+	<!-- Bootstrap Js -->
+    <script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/materialize/js/materialize.min.js"></script>
+    <!-- Metis Menu Js -->
+    <script src="assets/js/jquery.metisMenu.js"></script>
+    
+	
+	 <script src="assets/js/Lightweight-Chart/jquery.chart.js"></script>
+	 <!-- DATA TABLE SCRIPTS -->
+    <script src="assets/js/dataTables/jquery.dataTables.js"></script>
+    <script src="assets/js/dataTables/dataTables.bootstrap.js"></script>
+    <!-- Custom Js -->
+    <script src="assets/js/custom-scripts.js"></script> 
+
+
+	</div>
+
+    
+</div>
+</body>
+</html>
