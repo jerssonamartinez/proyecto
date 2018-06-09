@@ -12,9 +12,9 @@ export class ProductsService {
         return this.http.post<Productos>('http://localhost:8000/products', product)
     }
     
-    
+ /*   
     getProducts(): Observable<any>{
     return this.http.get('http://localhost:8000/products');
-}
+}*/
     
 }
