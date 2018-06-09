@@ -9,12 +9,11 @@ class UsersController extends Controller
 {
     function index(request $request)
     {
-        if($request->isJson()){
+        
         $users = User::all();
         
         return response()->json([$users], 200);
-        }
-        return response()->json(['error' => 'Unauthorized'], 401, []);
+       
     }
 
     
@@ -22,7 +21,7 @@ class UsersController extends Controller
         
         $user = new user();
         $user->usuario=$request->input('usuario');
-        $user->contraseña=$request->input('contraseña');
+        $user->password=$request->input('password');
         $user->nombre=$request->input('nombre');
         $user->email=$request->input('email');
         $user->telefono=$request->input('telefono');

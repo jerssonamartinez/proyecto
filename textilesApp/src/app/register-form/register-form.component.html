@@ -40,44 +40,46 @@
     </div>  
 
 
-    <div class="col-xs-4">
-
+    <form class="col-xs-4" (ngSubmit)="createUser(newUser.value)" #newUser="ngForm">
+<div>
     	<label for="nombrepatente">Nombre</label>
     		 <fieldset>
-    			<input type="text" id="disabledTextInput" class="form-control" placeholder="Nombre y apellidos">
+    			<input type="text" id="azz" class="form-control" placeholder="Nombre y apellidos" name="nombre" [(ngModel)]="user.nombre">
     		 </fieldset>	
 
         <label for="nombrepatente">Telefono</label>
     		 <fieldset>
-    			<input type="number" id="disabledTextInput" class="form-control" placeholder="Telefono">
+    			<input type="number" id="bzz" class="form-control" placeholder="Telefono" ngModel/>
     		 </fieldset>
         
         <label for="direccion">Dirección</label>
         <fieldset>
-            <input type="text" id="aa" class="form-control" placeholder="Dirección">
+            <input type="text" id="aa" class="form-control" placeholder="Dirección" ngModel/>
     	</fieldset>
         
         <label for="email">Email</label>
         <fieldset>
-            <input type="email" id="emailAddress" class="form-control" placeholder="Correo electrónico">
+            <input type="email" id="emailAddress" class="form-control" placeholder="Correo electrónico" ngModel/>
     	</fieldset>
         
         <label for="usuario">Usuario</label>
         <fieldset>
-            <input type="text" name="usuario" class="form-control" placeholder="Usuario">
+            <input type="text" name="usuario" class="form-control" placeholder="Usuario" ngModel/>
     	</fieldset>
         
         <label for="nombre" id="nombre1">Contraseña</label>
-            
+        <fieldset>
             <show-hide-password id="hide-pass" >
-            <input type="password" id="c" class="form-control" placeholder="Contraseña">
+            <input type="password" id="c" class="form-control" placeholder="Contraseña" ngModel/>
+                <label id="f">Mostrar contraseña</label>
             </show-hide-password> 
-        <label id="f">Mostrar contraseña</label>
+        </fieldset>
     	
         <br>
         
-        <button type="button" class="btn btn-info">Registrarse </button>  
-    </div>
+        <button type="submit" class="btn btn-info">Registrarse </button>  
+   </div>
+    </form>
         
     <script src="assets/js/jquery-1.10.2.js"></script>
 	<!-- Bootstrap Js -->

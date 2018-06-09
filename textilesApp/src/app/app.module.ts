@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import{ FormsModule } from '@angular/forms';
 import{ HttpModule } from '@angular/http';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { VentasComponent} from './Ventas/Ventas.component';
@@ -15,6 +16,7 @@ import { ProductoComponent } from './producto/producto.component';
 import { ProveedoresComponent } from './proveedores/proveedores.component';
 import { InventarioComponent } from './inventario/inventario.component';
 import { RegisterFormComponent } from './register-form/register-form.component';
+import { Productos } from './producto/producto.model';
 
 import { UserService } from './services/user.service';
 import { AuthguardGuard } from './authguard.guard';
@@ -69,6 +71,7 @@ const appRoutes = [
   imports: [
     RouterModule.forRoot(appRoutes),
     BrowserModule,
+    HttpClientModule,
     FormsModule,
     HttpModule,
     CalendarModule.forRoot(),
