@@ -23,4 +23,7 @@ $router->get('/users', ['uses' => 'UsersController@index']);
 $router->post('/users', ['uses' => 'UsersController@create']);
 
 $router->get('/products', ['uses' => 'ProductsController@index']);
-$router->post('/products', ['uses' => 'ProductsController@create']);
+$router->post('/products', 'ProductsController@create');
+
+$router->get('/ventas', ['uses' => 'VentasController@index']);
+$router->post('/ventas', ['uses' => 'VentasController@create']);

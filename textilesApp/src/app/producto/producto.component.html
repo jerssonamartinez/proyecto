@@ -46,30 +46,34 @@
 
 
     <div class="col-xs-4">
-
+<form (ngSubmit)="createProduct(newProduct.value)" #newProduct="ngForm">
+    
     		<label for="nombrepatente">Nombre</label>
     		 <fieldset>
-    			<input type="text" id="disabledTextInput" class="form-control" placeholder="Nombre Producto">
+    			<input type="text" id="disabledTextInput" class="form-control" placeholder="Nombre Producto" name="nombre" ngModel>
     		 </fieldset>	
 
         <label for="nombrepatente">Descripcion</label>
     		 <fieldset>
-    			<input type="text" id="disabledTextInput" class="form-control" placeholder="Individual o conjunto">
+    			<input type="text" id="disabledTextInput" class="form-control" placeholder="Individual o conjunto" name="presentacion" ngModel>
     		 </fieldset>
         
         <label for="nombre">Precio</label>
-
-        <label for="nombrepatente">{{label4}}</label>
     		 <fieldset>
-    			<input type="text" id="disabledTextInput" class="form-control" placeholder="Pesos">
+    			<input type="number" id="disabledTextInput" class="form-control" placeholder="Pesos"
+                       name="precio" ngModel>
     		 </fieldset>
         <label for="nombrepatente">Cantidad</label>
-    		<input type="fecha" class="form-control" placeholder="Cantidad"><br>
+    		<input type="number" class="form-control" placeholder="Cantidad" name= "cantDisp" 
+                   ngModel><br>
 
     		<label for="nombrepatente">{{label3}}</label>
         <br>
         
-        <button type="button" class="btn btn-info">Registrar </button>  
+        <button type="submit" class="btn btn-info">Registrar </button>  
+        <a routerLink="/inventario" type="submit" class="btn btn-info">Consultar </a>  
+        
+    </form>
     </div>
         
     <script src="assets/js/jquery-1.10.2.js"></script>

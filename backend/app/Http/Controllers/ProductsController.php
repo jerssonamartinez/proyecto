@@ -17,7 +17,10 @@ class ProductsController extends Controller
 
     function create(request $request){
         
-        $Product = new user();
+        $Product = Product::create($request->all());
+        return response()->json($Product, 201);
+        
+        /*$Product = new product();
         $Product->nombre=$request->input('nombre');
         $Product->presentacion=$request->input('presentacion');
         $Product->cantDisp=$request->input('cantDisp');
@@ -29,6 +32,6 @@ class ProductsController extends Controller
             }
         }catch(exception $e){
             return response()->json([],500);
-        }
+        }*/
     }
 }

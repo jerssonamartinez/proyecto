@@ -30,7 +30,6 @@ const appRoutes = [
     { path: '', component: RegisterFormComponent},
     
                    {
-                       canActivate: [AuthguardGuard],
                        path: 'ventas',
                        component: VentasComponent
                    },

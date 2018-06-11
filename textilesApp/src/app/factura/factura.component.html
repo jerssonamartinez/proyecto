@@ -62,46 +62,18 @@
                                     <thead>
                                         <tr>
                                             <th>id Factura</th>
-                                            <th>Cliente</th>
+                                            <th>Vendedor</th>
                                             <th>Fecha</th>
                                             <th>Valor</th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr class="odd gradeX">
-                                            <td>1</td>
-                                            <td>Carlos vives</td>
-                                            <td>Win 95+</td>
-                                            <td class="center">4</td>
-                                            <td><a href="#">ver</a></td>
-                                        </tr>
-                                        <tr class="even gradeC">
-                                            <td>2</td>
-                                            <td>Amanda Miguel</td>
-                                            <td>Win 95+</td>
-                                            <td class="center">5</td>
-                                            <td><a href="#">ver</a></td>
-                                        </tr>
-                                        <tr class="odd gradeA">
-                                            <td>3</td>
-                                            <td>Fonseca</td>
-                                            <td>Win 95+</td>
-                                            <td class="center">5.5</td>
-                                            <td><a href="#">ver</a></td>
-                                        </tr>
-                                        <tr class="even gradeA">
-                                            <td>4</td>
-                                            <td>Shakira</td>
-                                            <td>Win 98+</td>
-                                            <td class="center">6</td>
-                                            <td><a href="#">ver</a></td>
-                                        </tr>
-                                        <tr class="odd gradeA">
-                                            <td>5</td>
-                                            <td>James Rodriguez</td>
-                                            <td>Win XP SP2+</td>
-                                            <td class="center">7</td>
-                                            <td><a href="#">ver</a></td>
+                                        <tr *ngFor="let fact of facts" class="odd gradeX">
+                                            <td>{{fact.codVenta}}</td>
+                                            <td>{{fact.usuario}}</td>
+                                            <td>{{fact.fechaVenta}}</td>
+                                            <td class="center">{{fact.totalVenta}}</td>
+                                            <td><a href="#">Eliminar</a></td>
                                         </tr>
                                         
                                     </tbody>
